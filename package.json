@@ -1,0 +1,32 @@
+{
+  "name": "video-url-link",
+  "version": "1.0.0",
+  "description": "This module is used to get the video download url link from the website.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "mocha --timeout 20000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catcto/video-url-link.git"
+  },
+  "keywords": [
+    "youtube",
+    "video",
+    "download",
+    "you-get"
+  ],
+  "author": "catcto (https://github.com/catcto)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/catcto/video-url-link/issues"
+  },
+  "homepage": "https://github.com/catcto/video-url-link#readme",
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "request": "^2.88.0"
+  }
+}
