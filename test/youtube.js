@@ -1,15 +1,15 @@
 const assert = require('assert');
-const videoUrlLink = require('..')
+const videoUrlLink = require('..');
 
 describe('videoUrlLink.youtube', () => {
     const urls = [
-        `https://www.youtube.com/watch?v=ftlvreFtA2A`,
-        `https://m.youtube.com/watch?v=ftlvreFtA2A`,
-        `https://youtu.be/ftlvreFtA2A`,
-        `https://www.youtube.com/v/ftlvreFtA2A`,
-        `https://www.youtube.com/embed/ftlvreFtA2A`,
-        `https://music.youtube.com/watch?v=ftlvreFtA2A`,
-        `https://gaming.youtube.com/watch?v=ftlvreFtA2A`,
+        'https://www.youtube.com/watch?v=ftlvreFtA2A',
+        'https://m.youtube.com/watch?v=ftlvreFtA2A',
+        'https://youtu.be/ftlvreFtA2A',
+        'https://www.youtube.com/v/ftlvreFtA2A',
+        'https://www.youtube.com/embed/ftlvreFtA2A',
+        'https://music.youtube.com/watch?v=ftlvreFtA2A',
+        'https://gaming.youtube.com/watch?v=ftlvreFtA2A',
     ]
 
     urls.forEach((url) => {

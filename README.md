@@ -2,7 +2,7 @@
 
 This module is used to get the video download url link from the website.
 
-Supported Sites: YouTube, 抖音, 腾讯视频, 西瓜视频
+Supported Sites: YouTube, 抖音
 
 ## Installation
 
@@ -40,11 +40,27 @@ videoUrlLink.youtube.getInfo('https://youtu.be/VIDEO_ID', { hl: 'en', timeout: 1
 });
 ```
 
+### Get douyin Info
+
+videoUrlLink.douyin.getInfo(url, [options], callback(error, info))
+
+```js
+videoUrlLink.youtube.getInfo('http://v.douyin.com/VIDEO_ID', {}, (error, info) => {
+    if (error) {
+        console.error(error);
+    } else {
+        console.log(info.title);
+        console.log(info.url);
+    }
+});
+```
+
 ## Supported Sites
 
 | Site | URL | Video? | Details? |
 | :--- | :--- | :--- | :--- |
 | YouTube | <https://www.youtube.com/>  | ✓ | ✓ |
+| douyin | <https://www.douyin.com/>  | ✓ | ✓ |
 
 ## Tests
 
