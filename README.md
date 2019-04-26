@@ -2,7 +2,7 @@
 
 This module is used to get the video download url link from the website.
 
-Supported Sites: YouTube, 抖音
+Supported Sites: YouTube, Instagram, 抖音
 
 ## Installation
 
@@ -30,7 +30,7 @@ const videoUrlLink = require('video-url-link');
 videoUrlLink.youtube.getInfo(url, [options], callback(error, info))
 
 ```js
-videoUrlLink.youtube.getInfo('https://youtu.be/VIDEO_ID', { hl: 'en', timeout: 15000, proxy: 'http://myserver:18888' }, (error, info) => {
+videoUrlLink.youtube.getInfo('https://youtu.be/{ID}', { hl: 'en', timeout: 15000, proxy: 'http://myserver:18888' }, (error, info) => {
     if (error) {
         console.error(error);
     } else {
@@ -40,12 +40,12 @@ videoUrlLink.youtube.getInfo('https://youtu.be/VIDEO_ID', { hl: 'en', timeout: 1
 });
 ```
 
-### Get douyin Info
+### Get Douyin Info
 
 videoUrlLink.douyin.getInfo(url, [options], callback(error, info))
 
 ```js
-videoUrlLink.youtube.getInfo('http://v.douyin.com/VIDEO_ID', {}, (error, info) => {
+videoUrlLink.douyin.getInfo('http://v.douyin.com/{ID}', {}, (error, info) => {
     if (error) {
         console.error(error);
     } else {
@@ -55,12 +55,27 @@ videoUrlLink.youtube.getInfo('http://v.douyin.com/VIDEO_ID', {}, (error, info) =
 });
 ```
 
+### Get Ins Instagram
+
+videoUrlLink.instagram.getInfo(url, [options], callback(error, info))
+
+```js
+videoUrlLink.instagram.getInfo('https://www.instagram.com/p/{ID}', {}, (error, info) => {
+    if (error) {
+        console.error(error);
+    } else {
+        console.log(info.list);
+    }
+});
+```
+
 ## Supported Sites
 
 | Site | URL | Video? | Details? |
 | :--- | :--- | :--- | :--- |
 | YouTube | <https://www.youtube.com/>  | ✓ | ✓ |
-| douyin | <https://www.douyin.com/>  | ✓ | ✓ |
+| Douyin | <https://www.douyin.com/>  | ✓ | ✓ |
+| Instagram | <https://www.instagram.com/>  | ✓ | ✓ |
 
 ## Tests
 

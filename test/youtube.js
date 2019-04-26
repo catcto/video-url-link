@@ -13,7 +13,7 @@ describe('videoUrlLink.youtube', () => {
     ]
 
     urls.forEach((url) => {
-        it('youtube.getID' + url, () => {
+        it('youtube.getID ' + url, () => {
             let id = videoUrlLink.youtube.getID(url);
             assert.equal(id, 'ftlvreFtA2A');
         });

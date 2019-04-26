@@ -1,6 +1,6 @@
 {
   "name": "video-url-link",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "This module is used to get the video download url link from the website.",
   "main": "./lib/index.js",
   "scripts": {
