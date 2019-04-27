@@ -1,6 +1,6 @@
 {
   "name": "video-url-link",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Get Video Download URL, Catch Video From Any Site.",
   "main": "./lib/index.js",
   "scripts": {
