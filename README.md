@@ -4,7 +4,7 @@ This module is used to get the video download url link from the website.
 
 Module in pure javascript for node.js
 
-Supported Sites: YouTube, Instagram, 抖音
+Supported Sites: YouTube, Instagram, Twitter, 抖音
 
 ## Installation
 
@@ -57,7 +57,7 @@ videoUrlLink.douyin.getInfo('http://v.douyin.com/{ID}', {}, (error, info) => {
 });
 ```
 
-### Get Ins Instagram
+### Get Instagram Info
 
 videoUrlLink.instagram.getInfo(url, [options], callback(error, info))
 
@@ -71,6 +71,21 @@ videoUrlLink.instagram.getInfo('https://www.instagram.com/p/{ID}', {}, (error, i
 });
 ```
 
+### Get Twitter Info
+
+videoUrlLink.twitter.getInfo(url, [options], callback(error, info))
+
+```js
+videoUrlLink.twitter.getInfo('https://twitter.com/blakelively/status/{ID}', {}, (error, info) => {
+    if (error) {
+        console.error(error);
+    } else {
+        console.log(info.full_text);
+        console.log(info.variants);
+    }
+});
+```
+
 ## Supported Sites
 
 | Site | URL | Video? | Details? |
@@ -78,6 +93,7 @@ videoUrlLink.instagram.getInfo('https://www.instagram.com/p/{ID}', {}, (error, i
 | YouTube | <https://www.youtube.com/>  | ✓ | ✓ |
 | Douyin | <https://www.douyin.com/>  | ✓ | ✓ |
 | Instagram | <https://www.instagram.com/>  | ✓ | ✓ |
+| Twitter | <https://twitter.com>  | ✓ | ✓ |
 
 ## Tests
 
