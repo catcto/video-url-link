@@ -76,7 +76,7 @@ videoUrlLink.instagram.getInfo('https://www.instagram.com/p/{ID}', {}, (error, i
 videoUrlLink.twitter.getInfo(url, [options], callback(error, info))
 
 ```js
-videoUrlLink.twitter.getInfo('https://twitter.com/blakelively/status/{ID}', {}, (error, info) => {
+videoUrlLink.twitter.getInfo('https://twitter.com/{@}/status/{ID}', {}, (error, info) => {
     if (error) {
         console.error(error);
     } else {
