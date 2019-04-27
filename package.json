@@ -1,7 +1,7 @@
 {
   "name": "video-url-link",
   "version": "0.1.1",
-  "description": "This module is used to get the video download url link from the website.",
+  "description": "Get Video Download URL, Catch Video From Any Site.",
   "main": "./lib/index.js",
   "scripts": {
     "test": "mocha --timeout 20000"
@@ -11,10 +11,12 @@
     "url": "git+https://github.com/catcto/video-url-link.git"
   },
   "keywords": [
+    "video downloader",
     "youtube",
-    "video",
-    "download",
-    "you-get"
+    "douyin",
+    "instagram",
+    "facebook",
+    "twitter"
   ],
   "author": "catcto (https://github.com/catcto)",
   "license": "MIT",

@@ -2,6 +2,8 @@
 
 This module is used to get the video download url link from the website.
 
+Module in pure javascript for node.js
+
 Supported Sites: YouTube, Instagram, 抖音
 
 ## Installation
