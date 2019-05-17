@@ -32,7 +32,7 @@ const videoUrlLink = require('video-url-link');
 videoUrlLink.youtube.getInfo(url, [options], callback(error, info))
 
 ```js
-videoUrlLink.youtube.getInfo('https://youtu.be/{ID}', { hl: 'en', timeout: 15000, proxy: 'http://myserver:18888' }, (error, info) => {
+videoUrlLink.youtube.getInfo('https://youtu.be/{ID}', { hl: 'en' }, (error, info) => {
     if (error) {
         console.error(error);
     } else {
@@ -47,7 +47,7 @@ videoUrlLink.youtube.getInfo('https://youtu.be/{ID}', { hl: 'en', timeout: 15000
 videoUrlLink.douyin.getInfo(url, [options], callback(error, info))
 
 ```js
-videoUrlLink.douyin.getInfo('http://v.douyin.com/{ID}', {}, (error, info) => {
+videoUrlLink.douyin.getInfo('http://v.douyin.com/{ID}', (error, info) => {
     if (error) {
         console.error(error);
     } else {
@@ -62,7 +62,7 @@ videoUrlLink.douyin.getInfo('http://v.douyin.com/{ID}', {}, (error, info) => {
 videoUrlLink.instagram.getInfo(url, [options], callback(error, info))
 
 ```js
-videoUrlLink.instagram.getInfo('https://www.instagram.com/p/{ID}', {}, (error, info) => {
+videoUrlLink.instagram.getInfo('https://www.instagram.com/p/{ID}', (error, info) => {
     if (error) {
         console.error(error);
     } else {
