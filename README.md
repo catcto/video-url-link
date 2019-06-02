@@ -4,7 +4,7 @@ This module is used to get the video download url link from the website.
 
 Module in pure javascript for node.js
 
-Supported Sites: YouTube, Instagram, Twitter, 抖音
+Supported Sites: YouTube, Instagram, Twitter, 抖音, 快手
 
 ## Installation
 
@@ -57,6 +57,21 @@ videoUrlLink.douyin.getInfo('http://v.douyin.com/{ID}', (error, info) => {
 });
 ```
 
+### Get Kuaishou Info
+
+videoUrlLink.kuaishou.getInfo(url, [options], callback(error, info))
+
+```js
+videoUrlLink.kuaishou.getInfo('http://www.gifshow.com/s/{ID}', (error, info) => {
+    if (error) {
+        console.error(error);
+    } else {
+        console.log(info.title);
+        console.log(info.url);
+    }
+});
+```
+
 ### Get Instagram Info
 
 videoUrlLink.instagram.getInfo(url, [options], callback(error, info))
@@ -91,7 +106,8 @@ videoUrlLink.twitter.getInfo('https://twitter.com/{@}/status/{ID}', {}, (error, 
 | Site | URL | Video? | Details? |
 | :--- | :--- | :--- | :--- |
 | YouTube | <https://www.youtube.com/>  | ✓ | ✓ |
-| Douyin | <https://www.douyin.com/>  | ✓ | ✓ |
+| 抖音 | <https://www.douyin.com/>  | ✓ | ✓ |
+| 快手 | <https://www.kuaishou.com/>  | ✓ | ✓ |
 | Instagram | <https://www.instagram.com/>  | ✓ | ✓ |
 | Twitter | <https://twitter.com>  | ✓ | ✓ |
 
