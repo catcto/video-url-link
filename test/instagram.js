@@ -9,7 +9,7 @@ describe('videoUrlLink.instagram', () => {
     ]
     urls.forEach(function (url) {
         it('instagram.getInfo ' + url, (done) => {
-            videoUrlLink.instagram.getInfo(url, { timeout: 15000, proxy: 'http://myserver:18888' }, (error, info) => {
+            videoUrlLink.instagram.getInfo(url, { timeout: 15000, proxy: 'http://cat-cn:18888' }, (error, info) => {
                 console.log(info);
                 done(error);
             });

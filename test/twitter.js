@@ -8,7 +8,7 @@ describe('videoUrlLink.twitter', () => {
     ]
     urls.forEach(function (url) {
         it('twitter.getInfo ' + url, (done) => {
-            videoUrlLink.twitter.getInfo(url, { proxy: 'http://myserver:18888' }, (error, info) => {
+            videoUrlLink.twitter.getInfo(url, { proxy: 'http://cat-cn:18888' }, (error, info) => {
                 console.log(info);
                 done(error);
             });

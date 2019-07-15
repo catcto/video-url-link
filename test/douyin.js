@@ -3,7 +3,7 @@ const videoUrlLink = require('..');
 
 describe('videoUrlLink.douyin', () => {
     const urls = [
-        'http://v.douyin.com/joBL8X/'
+        'http://v.douyin.com/B17aH9/'
     ]
     it('douyin.getInfo', (done) => {
         videoUrlLink.douyin.getInfo(urls[0], (error, info) => {
