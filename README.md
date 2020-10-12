@@ -4,7 +4,7 @@ This module is used to get the video download url link from the website.
 
 Module in pure javascript for node.js
 
-Supported Sites: YouTube, Instagram, Twitter, 抖音, 快手
+Supported Sites: YouTube, Twitter
 
 ## Installation
 
@@ -42,50 +42,6 @@ videoUrlLink.youtube.getInfo('https://youtu.be/{ID}', { hl: 'en' }, (error, info
 });
 ```
 
-### Get Douyin Info
-
-videoUrlLink.douyin.getInfo(url, [options], callback(error, info))
-
-```js
-videoUrlLink.douyin.getInfo('http://v.douyin.com/{ID}', (error, info) => {
-    if (error) {
-        console.error(error);
-    } else {
-        console.log(info.title);
-        console.log(info.url);
-    }
-});
-```
-
-### Get Kuaishou Info
-
-videoUrlLink.kuaishou.getInfo(url, [options], callback(error, info))
-
-```js
-videoUrlLink.kuaishou.getInfo('http://www.gifshow.com/s/{ID}', (error, info) => {
-    if (error) {
-        console.error(error);
-    } else {
-        console.log(info.title);
-        console.log(info.url);
-    }
-});
-```
-
-### Get Instagram Info
-
-videoUrlLink.instagram.getInfo(url, [options], callback(error, info))
-
-```js
-videoUrlLink.instagram.getInfo('https://www.instagram.com/p/{ID}', (error, info) => {
-    if (error) {
-        console.error(error);
-    } else {
-        console.log(info.list);
-    }
-});
-```
-
 ### Get Twitter Info
 
 videoUrlLink.twitter.getInfo(url, [options], callback(error, info))
@@ -106,9 +62,6 @@ videoUrlLink.twitter.getInfo('https://twitter.com/{@}/status/{ID}', {}, (error, 
 | Site | URL | Video? | Details? |
 | :--- | :--- | :--- | :--- |
 | YouTube | <https://www.youtube.com/>  | ✓ | ✓ |
-| 抖音 | <https://www.douyin.com/>  | ✓ | ✓ |
-| 快手 | <https://www.kuaishou.com/>  | ✓ | ✓ |
-| Instagram | <https://www.instagram.com/>  | ✓ | ✓ |
 | Twitter | <https://twitter.com>  | ✓ | ✓ |
 
 ## Tests

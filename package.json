@@ -1,6 +1,6 @@
 {
   "name": "video-url-link",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Get Video Download URL, Catch Video From Any Site.",
   "main": "./lib/index.js",
   "scripts": {
@@ -13,9 +13,6 @@
   "keywords": [
     "video downloader",
     "youtube",
-    "抖音",
-    "快手",
-    "instagram",
     "facebook",
     "twitter"
   ],
