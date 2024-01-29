@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/catcto/video-url-link#readme",
   "devDependencies": {
-    "mocha": "^6.1.4"
+    "mocha": "^10.2.0"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
