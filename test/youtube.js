@@ -20,7 +20,7 @@ describe('videoUrlLink.youtube', () => {
     })
 
     it('youtube.getInfo', (done) => {
-        videoUrlLink.youtube.getInfo('https://www.youtube.com/watch?v=x7OCFcgf504', { hl: 'en', timeout: 15000}, (error, info) => {
+        videoUrlLink.youtube.getInfo('https://www.youtube.com/watch?v=x7OCFcgf504', { hl: 'en', timeout: 15000, proxy: 'http://127.0.0.1:18880'}, (error, info) => {
             if (error) {
                 done(error);
             } else {
